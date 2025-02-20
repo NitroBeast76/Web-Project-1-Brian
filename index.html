@@ -1,5 +1,17 @@
+<!--Name:  Nwaeleme Ugonna Brian
+
+Course: Web Development 10S 
+
+Teacher: Ms. Hoitink 
+
+School: Pembina Trails Collegiate (PTC) 
+
+Date Last Modified: 2/20/2025 -->
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,61 +23,111 @@
             margin: 0;
             padding: 0;
         }
+
         header {
-            background-color: aquamarine;
+            background-color: rgb(179, 24, 24);
             padding: 20px 50px;
             align-items: center;
             display: flex;
             justify-content: space-between;
         }
+
         header a {
             text-decoration: none;
             color: black;
             margin-left: 20px;
         }
+
         header a:hover {
-            color: red;
+            color: rgb(255, 174, 0);
         }
+
         main {
             justify-content: space-between;
-            display: flex;
+            display: block;
             padding: 60px;
             align-items: center;
             background-color: rgb(177, 95, 41);
             background-image: linear-gradient(rgb(177, 95, 41), orange);
         }
+
         .main-text {
             color: black;
             max-width: 50%;
         }
+
         .main-text h1 {
             margin-bottom: 30px;
         }
+
         .main-text h3 {
             margin-bottom: 30px;
         }
+
         .main-text h4 {
             margin-bottom: 30px;
         }
+        .main-text h4 a {
+            margin-bottom: 30px;
+            text-decoration: none;
+            color: black;
+        }
+        .main-text h4 a:hover{
+            margin-bottom: 30px;
+            color: red;
+        }
+
         .main-text p {
             margin-bottom: 30px;
         }
+
         .main-image img {
             border-radius: 10px;
             width: 90%;
             height: 10%;
         }
+        .main-image button {
+            border-radius: 10px;
+            width: 90%;
+            height: 10%;
+            display: inline-block;
+        }
+
+        .main-text iframe {
+            margin-top: 20px;
+            display: inline-block;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: rgb(77, 41, 18);
         }
+
         footer a {
             text-decoration: none;
             color: black;
         }
+
+        footer a:hover {
+            color: rgb(255, 174, 0);
+        }
+        .icon {
+            display: inline-block;
+        }
+        .icon img{
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .icon figure{
+            display: inline-block;
+            
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="header-image">
@@ -77,22 +139,33 @@
             <a href="feedback.html">Feedback</a>
         </nav>
     </header>
+
     <main>
         <div class="main-text">
-            <h1><u>Welcome to My World of One Piece</u></h1>
-            <h4>Here, I want to showcase my hobby of reading One Piece, by Eichirro Oda</h4>
-            <p>This site is my personal journey and love of the awesome world of One Piece, from its character design, story telling, plot and other aspects of the manga. </p>
-            <p>Here, you will learn a bit of this world and hopefully come to love it as I do.</p><hr style="border-color: black;">
-            <h3>One Piece</h3>
-            <p>One Piece is a Japanese manga series written and illustrated by Eiichiro Oda,<br>it has been serialized in Shueisha's Weekly Shōnen Jump magazine since July 22, 1997, and has been collected into 98 tankōbon volumes as of April 2021.<br>The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit.<br>With his pirate crew, the Straw Hat Pirates. Luffy explores the Grand Line in search of the world's ultimate treasure known as "One Piece" in order to become the next Pirate King.</p>
+            <h1><b><u>Welcome to my One Piece Hobby showcase!</u></b></h1>
+            <h3>This page is built to share my love for One Piece with you.</h3>
+            <h4>Feel free to click this <a href="about.html" target="_self"> <u>link</u> </a> to go deeper with me.</h4>
         </div>
+
         <div class="main-image">
-            <img src="#" alt="One Piece Image">
+            <figure>
+                <img src="#" alt="One Piece Image 1">
+                <img src="#" alt="One Piece Image 2">
+                <img src="#" alt="One Piece Image 3">
+            </figure>
         </div>
     </main>
+
     <footer>
-        <h4></h4>
+        <h4>All my references are in this<a href="#" style="color: red;"> link</a> | Move to the <a href="#" style="color: red;">Facts</a> page to view deeper content on One Piece</h4>
+        <div class="icon">
+        <a href="#" target="_blank"><figure><img src="img/google.png"></figure></a>
+        <a href="#" target="_blank"><figure><img src="img/apple.png"></figure></a>
+        <a href="#" target="_blank"><figure><img src="img/facebook.png"></figure></a>
+        <a href="#" target="_blank"><figure><img src="img/microsoft.png"></figure></a>
+        </div> 
     </footer>
-    </section>
+
 </body>
+
 </html>
