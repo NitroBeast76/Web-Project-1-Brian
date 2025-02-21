@@ -1,149 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My One Piece Adventure</title>
     <style>
+        /* General body styling */
         body {
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
-
+        /* Header styling */
         header {
-            background-color: rgb(179, 24, 24);
+            background-color: rgb(65, 7, 112);
             padding: 20px 50px;
             align-items: center;
             display: flex;
             justify-content: space-between;
         }
-
+        /* Header links styling */
         header a {
             text-decoration: none;
             color: black;
             margin-left: 20px;
         }
-
+        /* Header links hover effect */
         header a:hover {
-            color: rgb(255, 174, 0);
+            color: rgb(231, 22, 22);
         }
-
+        /* Header image styling */
+        .header-image img {
+            height: auto;
+            width: 30%;
+        }
+        /* Navigation styling */
+        header nav {
+            display: flex;
+            justify-content: space-around;
+            max-width: 70%;
+        }
+        /* Main section styling */
         main {
             justify-content: space-between;
             display: flex;
             padding: 60px;
             align-items: center;
-            background-color: rgb(177, 95, 41);
-            background-image: linear-gradient(rgb(177, 95, 41), orange);
+            background-color: rgb(5, 5, 5);
+            background-image: linear-gradient(rgb(8, 8, 8), rgb(32, 1, 90));
         }
-
+        /* Main text styling */
         .main-text {
-            color: black;
-            max-width: 50%;
+            color: rgb(241, 238, 238);
         }
-
+        /* Main text headings styling */
         .main-text h1 {
             margin-bottom: 30px;
         }
-
         .main-text h3 {
             margin-bottom: 30px;
         }
-
         .main-text h4 {
             margin-bottom: 30px;
         }
-
+        /* Main text paragraphs styling */
         .main-text p {
             margin-bottom: 30px;
         }
-
+        /* Main text links styling */
         .main-text p a {
             margin-bottom: 30px;
             text-decoration: none;
             color: black;
         }
-
+        /* Main text links hover effect */
         .main-text p a:hover {
             color: red;
         }
-
+        /* Main image styling */
         .main-image img {
             border-radius: 10px;
             width: 90%;
             height: 10%;
         }
-
+        /* Main text iframe styling */
         .main-text iframe {
             margin-top: 20px;
             display: inline-block;
         }
-
+        /* Footer styling */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: rgb(77, 41, 18);
+            background-color: rgb(39, 3, 87);
         }
-
+        /* Footer links styling */
         footer a {
             text-decoration: none;
-            color: black;
+            color: rgb(255, 255, 255);
         }
-
+        /* Footer links hover effect */
         footer a:hover {
-            color: rgb(255, 174, 0);
+            color: rgb(121, 17, 17);
         }
-        table, th, td {
-            border: 1px solid rgba(0, 0, 0, 0.748);
-            width: 100%;
+        /* Table cells styling */
+        table td {
+            border: 1px solid rgba(247, 245, 245, 0.748);
         }
-        table tr{
-            color: rgb(0, 0, 0);
+        /* Table headers styling */
+        table th {
+            border: 1px solid rgba(241, 239, 239, 0.748);
         }
-        .table{
+        /* Table rows styling */
+        table tr {
+            color: rgb(252, 249, 249);
+        }
+        /* Table styling */
+        table {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 60px;
             width: 100%;
-            max-width: max-content;
         }
-        .table-text{ 
+        /* Table text container styling */
+        .table-text {
             max-width: 100%;
         }
-        .table-text h2{
-        font-size: larger;
-        color: rgb(0, 0, 0);
-        margin-bottom: 20px;
+        /* Table text headings styling */
+        .table-text h2 {
+            font-size: larger;
+            color: rgb(228, 228, 228);
+            margin-bottom: 20px;
         }
-        .table-text p{
+        /* Table text paragraphs styling */
+        .table-text p {
             font-size: medium;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             margin-bottom: 30px;
         }
-        .table-text .btn{
+        /* Button styling */
+        .table-text .btn {
             display: inline-block;
             padding: 10px 20px;
             background-color: rgb(7, 7, 167);
             color: aliceblue;
             text-decoration: none;
             border-radius: 5px;
-            margin-right: 15px;
         }
-        .table-text .btn:hover{
+        /* Button hover effect */
+        .table-text .btn:hover {
             background-color: rgb(9, 9, 171);
             color: rgba(240, 248, 255, 0.808);
         }
     </style>
 </head>
-
 <body>
     <header>
         <div class="header-image">
-            <a href="index.html" target="_self"><figure><img src="#" alt="One Piece"></figure></a>
+            <a href="index.html" target="_self"><figure><img src="images/One-Piece-Logo.png" alt="One Piece" title="From Logos-World"></figure></a>
         </div>
         <nav>
             <a href="index.html">Home</a>
@@ -151,378 +167,193 @@
             <a href="feedback.html">Feedback</a>
         </nav>
     </header>
-
     <main>
         <div class="main-text">
             <h1>Feedback & Interactive Zone.</h1>
             <p>I'd be interested in hearing what you have to say regarding One Piece! If you are new or have followed the show for a long time, feel free to tell me what you think, ask questions, or even just say hi.</p>
             <form id="feedback-form" method="get">
-                <fieldset class="feedback-form">
-                    <legend>Feedback</legend>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" required placeholder="Please type your name...."><br>
-                        <label for="description">Favourite Part of One Piece:</label><br>
-                        <textarea id="description" name="description" placeholder="Type in here...."></textarea><br>
-                        <label for="arc">Favourite Arc:</label><br>
-                        <select id="arc" name="arc">
-                            <option value="East Blue">East Blue</option>
-                            <option value="Alabasta">Alabasta</option>
-                            <option value="Sky Island">Sky Island</option>
-                            <option value="Water 7">Water 7</option>
-                            <option value="Enies Lobby">Enies Lobby</option>
-                            <option value="Thriller Bark">Thriller Bark</option>
-                            <option value="Sabaody Archipelago">Sabaody Archipelago</option>
-                            <option value="Marineford">Marineford</option>
-                            <option value="Fishman Island">Fishman Island</option>
-                            <option value="Punk Hazard">Punk Hazard</option>
-                            <option value="Dressrosa">Dressrosa</option>
-                            <option value="Zou">Zou</option>
-                            <option value="Whole Cake Island">Whole Cake Island</option>
-                            <option value="Wano Country">Wano Country</option>
-                            <option vlaue="Egghead Island">Egghead Island</option>
-                            <option value="Elbaf">Elbaf</option>
-                        </select><br>
-                        <label for="rating" >Rating:</label><br>
-                        <input type="radio" id="1" name="1" value="1">
-                        <label for="1">1</label>
-                        <input type="radio" id="2" name="2" value="2">
-                        <label for="2">2</label>
-                        <input type="radio" id="3" name="3" value="3">
-                        <label for="3">3</label>
-                        <input type="radio" id="4" name="4" value="4">
-                        <label for="4">4</label>
-                        <input type="radio" id="5" name="5" value="5">
-                        <label for="5">5</label><br>
-                        <label for="color">What color is Zoro's hair?:</label><br>
-                        <input type="color" id="color" name="color"><br>
-                        <input type="submit" value="Submit">
-                </fieldset>
+            <fieldset class="feedback-form">
+                <legend>Feedback</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Please type your name...."><br><!--This is making an area to accept gthe users text input to answer for thier name-->
+                <label for="description">Favourite Part of One Piece:</label><br>
+                <textarea id="description" name="description" placeholder="Type in here...."></textarea><br><!--Thi is like a text input but larger and has more spaces for the user-->
+                <label for="arc">Favourite Arc:</label><br>
+                <select id="arc" name="arc">
+                <option value="East Blue">East Blue</option><!--all this are the options of rthe dropdown menu for the user to click-->
+                <option value="Alabasta">Alabasta</option>
+                <option value="Sky Island">Sky Island</option>
+                <option value="Water 7">Water 7</option>
+                <option value="Enies Lobby">Enies Lobby</option>
+                <option value="Thriller Bark">Thriller Bark</option>
+                <option value="Sabaody Archipelago">Sabaody Archipelago</option>
+                <option value="Marineford">Marineford</option>
+                <option value="Fishman Island">Fishman Island</option>
+                <option value="Punk Hazard">Punk Hazard</option>
+                <option value="Dressrosa">Dressrosa</option>
+                <option value="Zou">Zou</option>
+                <option value="Whole Cake Island">Whole Cake Island</option>
+                <option value="Wano Country">Wano Country</option>
+                <option vlaue="Egghead Island">Egghead Island</option>
+                <option value="Elbaf">Elbaf</option>
+                </select><br>
+                <label for="rating">Rating:</label><br>
+                <input type="radio" id="star-1" name="rating" value="1"><!--this down are the radios for the rationg form 1 to 5, the user has to clcik one-->
+                <label for="star-1">1</label>
+                <input type="radio" id="star-2" name="rating" value="2">
+                <label for="star-2">2</label>
+                <input type="radio" id="star-3" name="rating" value="3">
+                <label for="star-3">3</label>
+                <input type="radio" id="star-4" name="rating" value="4">
+                <label for="star-4">4</label>
+                <input type="radio" id="star-5" name="rating" value="5">
+                <label for="star-5">5</label><br>
+                <label for="color">What color is Zoro's hair?:</label><br><!--This clor picker is used for the user to pick a color-->
+                <input type="color" id="color" name="color"><br>
+                <input type="submit" value="Submit">
+            </fieldset>
             </form><br>
             <h2>Character/Arc Opinions</h2>
             <p>Here are of the strawhats and arcs in One Piece. Feel free to share your thoughts on them as well.</p>
             <p>Feel free to check out this <a href="#" target="_self"> page </a> to get more info on the Strawhats and arcs.</p>
-            <div class="table">
-                <div class="table-text">
             <table>
+            <div class="table-text"><!--the table here is describing all the StrawHats and also the arcs that have gone in One Piece-->
                 <tr>
-                    <th>Name(Strawhats or Arc)</th>
-                    <th>Description</th>
-                    <th>Opinion</th><br>
-                </tr>
-                <tr>
-                    <td>Monkey D. Luffy</td>
-                    <td>The captain of the Straw Hat Pirates, Luffy can stretch his body like rubber after eating the Gum-Gum Fruit. His dream is to find the One Piece and become the King of the Pirates. Known for his optimism and loyalty, Luffy turns foes into allies and protects his crew fiercely.</td>
+                <th style="width: 50%;">Name(Strawhats or Arc)</th>
+                <th>Description</th>
+                <th style="width: 23%;">Images</th><br>
                 </tr>
                 <tr>
-                    <td>Roronoa Zoro</td>
-                    <td>The crew's swordsman, Zoro uses a three-sword style and aims to be the world's greatest swordsman. He is Luffy's right-hand man, known for his loyalty and dedication despite his poor sense of direction.</td>
+                <td>Monkey D. Luffy</td>
+                <td>The captain of the Straw Hat Pirates, Luffy can stretch his body like rubber after eating the Gum-Gum Fruit. His dream is to find the One Piece and become the King of the Pirates. Known for his optimism and loyalty, Luffy turns foes into allies and protects his crew fiercely. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Nami</td>
-                    <td>The navigator, Nami is skilled in charting courses and dreams of mapping the world. She joined the crew after being freed from the Arlong Pirates and is known for her intelligence and resourcefulness.</td>
+                <td>Roronoa Zoro</td>
+                <td>The crew's swordsman, Zoro uses a three-sword style and aims to be the world's greatest swordsman. He is Luffy's right-hand man, known for his loyalty and dedication despite his poor sense of direction. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Usopp</td>
-                    <td>The sharpshooter, Usopp is known for his marksmanship and inventive gadgets. Though often cowardly, he shows bravery when his friends are in danger and dreams of becoming a brave warrior like his father.</td>
+                <td>Nami</td>
+                <td>The navigator, Nami is skilled in charting courses and dreams of mapping the world. She joined the crew after being freed from the Arlong Pirates and is known for her intelligence and resourcefulness. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Sanji</td>
-                    <td>The cook, Sanji ensures the crew is well-fed and dreams of finding the All Blue. Known for his chivalry and powerful kicks, he is a strategic and loyal member of the crew.</td>
+                <td>Usopp</td>
+                <td>The sharpshooter, Usopp is known for his marksmanship and inventive gadgets. Though often cowardly, he shows bravery when his friends are in danger and dreams of becoming a brave warrior like his father. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Tony Tony Chopper</td>
-                    <td>The doctor, Chopper is a reindeer who gained human traits from the Human-Human Fruit. He dreams of curing any disease and is known for his medical expertise and endearing innocence.</td>
+                <td>Sanji</td>
+                <td>The cook, Sanji ensures the crew is well-fed and dreams of finding the All Blue. Known for his chivalry and powerful kicks, he is a strategic and loyal member of the crew. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Nico Robin</td>
-                    <td>The archaeologist, Robin can sprout replicas of her body parts with the Flower-Flower Fruit. She seeks to uncover the True History and is valued for her historical knowledge and calm demeanor.</td>
+                <td>Tony Tony Chopper</td>
+                <td>The doctor, Chopper is a reindeer who gained human traits from the Human-Human Fruit. He dreams of curing any disease and is known for his medical expertise and endearing innocence. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Franky</td>
-                    <td>The shipwright, Franky is a cyborg who built the Thousand Sunny. He dreams of building a ship that can sail the world and is known for his engineering skills and larger-than-life personality.</td>
+                <td>Nico Robin</td>
+                <td>The archaeologist, Robin can sprout replicas of her body parts with the Flower-Flower Fruit. She seeks to uncover the True History and is valued for her historical knowledge and calm demeanor. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Brook</td>
-                    <td>The musician, Brook is a living skeleton revived by the Revive-Revive Fruit. He dreams of reuniting with Laboon and is known for his humor, music, and swordsmanship.</td>
+                <td>Franky</td>
+                <td>The shipwright, Franky is a cyborg who built the Thousand Sunny. He dreams of building a ship that can sail the world and is known for his engineering skills and larger-than-life personality. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Jinbe</td>
-                    <td>The helmsman, Jinbe is a fish-man and master of Fish-Man Karate. He dreams of harmony between humans and fish-men and is valued for his wisdom and maritime knowledge.</td>
+                <td>Brook</td>
+                <td>The musician, Brook is a living skeleton revived by the Revive-Revive Fruit. He dreams of reuniting with Laboon and is known for his humor, music, and swordsmanship. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>East Blue</td>
-                    <td>The East Blue Saga introduces the main characters and sets the stage for their adventures. It includes arcs like Romance Dawn, Orange Town, Syrup Village, Baratie, and Arlong Park. This saga showcases the formation of the Straw Hat Pirates and their initial struggles. Luffy recruits Zoro, Nami, Usopp, and Sanji, and they face various foes, including Buggy the Clown, Captain Kuro, Don Krieg, and Arlong.</td>
-                    <td>
-                        <label for="east-blue-rating">Rating:</label><br>
-                        <input type="radio" id="east-blue-1" name="east-blue-rating" value="1">
-                        <label for="east-blue-1">1</label>
-                        <input type="radio" id="east-blue-2" name="east-blue-rating" value="2">
-                        <label for="east-blue-2">2</label>
-                        <input type="radio" id="east-blue-3" name="east-blue-rating" value="3">
-                        <label for="east-blue-3">3</label>
-                        <input type="radio" id="east-blue-4" name="east-blue-rating" value="4">
-                        <label for="east-blue-4">4</label>
-                        <input type="radio" id="east-blue-5" name="east-blue-rating" value="5">
-                        <label for="east-blue-5">5</label>
-                    </td>
+                <td>Jinbe</td>
+                <td>The helmsman, Jinbe is a fish-man and master of Fish-Man Karate. He dreams of harmony between humans and fish-men and is valued for his wisdom and maritime knowledge. <p>Click the <a href="#" target=_self> page </a> for additional info on this character</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Alabasta</td>
-                    <td>The Alabasta Saga follows the crew's journey to the desert kingdom of Alabasta, where they help Princess Vivi save her country from the sinister Baroque Works organization. Key arcs include Reverse Mountain, Whiskey Peak, Little Garden, Drum Island, and Alabasta. The crew battles powerful enemies like Mr. 0 (Crocodile) and his agents, and they form alliances with characters like Tony Tony Chopper and Nico Robin.</td>
-                    <td>
-                        <label for="alabasta-rating">Rating:</label><br>
-                        <input type="radio" id="alabasta-1" name="alabasta-rating" value="1">
-                        <label for="alabasta-1">1</label>
-                        <input type="radio" id="alabasta-2" name="alabasta-rating" value="2">
-                        <label for="alabasta-2">2</label>
-                        <input type="radio" id="alabasta-3" name="alabasta-rating" value="3">
-                        <label for="alabasta-3">3</label>
-                        <input type="radio" id="alabasta-4" name="alabasta-rating" value="4">
-                        <label for="alabasta-4">4</label>
-                        <input type="radio" id="alabasta-5" name="alabasta-rating" value="5">
-                        <label for="alabasta-5">5</label>
-                    </td>
+                <td>East Blue</td>
+                <td>The East Blue Saga introduces the main characters and sets the stage for their adventures. It includes arcs like Romance Dawn, Orange Town, Syrup Village, Baratie, and Arlong Park. This saga showcases the formation of the Straw Hat Pirates and their initial struggles. Luffy recruits Zoro, Nami, Usopp, and Sanji, and they face various foes, including Buggy the Clown, Captain Kuro, Don Krieg, and Arlong. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Sky Island</td>
-                    <td>The Sky Island Saga takes the crew to the sky-bound island of Skypiea, where they encounter the tyrannical god Enel and uncover the island's hidden history. This saga includes the Jaya and Skypiea arcs. The crew learns about the ancient city of Shandora and the Poneglyphs, and they engage in a fierce battle against Enel and his forces to liberate Skypiea.</td>
-                    <td>
-                        <label for="sky-island-rating">Rating:</label><br>
-                        <input type="radio" id="sky-island-1" name="sky-island-rating" value="1">
-                        <label for="sky-island-1">1</label>
-                        <input type="radio" id="sky-island-2" name="sky-island-rating" value="2">
-                        <label for="sky-island-2">2</label>
-                        <input type="radio" id="sky-island-3" name="sky-island-rating" value="3">
-                        <label for="sky-island-3">3</label>
-                        <input type="radio" id="sky-island-4" name="sky-island-rating" value="4">
-                        <label for="sky-island-4">4</label>
-                        <input type="radio" id="sky-island-5" name="sky-island-rating" value="5">
-                        <label for="sky-island-5">5</label>
-                    </td>
+                <td>Alabasta</td>
+                <td>The Alabasta Saga follows the crew's journey to the desert kingdom of Alabasta, where they help Princess Vivi save her country from the sinister Baroque Works organization. Key arcs include Reverse Mountain, Whiskey Peak, Little Garden, Drum Island, and Alabasta. The crew battles powerful enemies like Mr. 0 (Crocodile) and his agents, and they form alliances with characters like Tony Tony Chopper and Nico Robin. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Water 7</td>
-                    <td>The Water 7 Saga sees the crew arriving at the water metropolis of Water 7, where they face the powerful CP9 organization and rescue their crewmate Robin. This saga includes the Long Ring Long Land, Water 7, and Enies Lobby arcs. The crew acquires a new ship, the Thousand Sunny, and they confront the World Government to save Robin, showcasing their unwavering loyalty and strength.</td>
-                    <td>
-                        <label for="water-7-rating">Rating:</label><br>
-                        <input type="radio" id="water-7-1" name="water-7-rating" value="1">
-                        <label for="water-7-1">1</label>
-                        <input type="radio" id="water-7-2" name="water-7-rating" value="2">
-                        <label for="water-7-2">2</label>
-                        <input type="radio" id="water-7-3" name="water-7-rating" value="3">
-                        <label for="water-7-3">3</label>
-                        <input type="radio" id="water-7-4" name="water-7-rating" value="4">
-                        <label for="water-7-4">4</label>
-                        <input type="radio" id="water-7-5" name="water-7-rating" value="5">
-                        <label for="water-7-5">5</label>
-                    </td>
+                <td>Sky Island</td>
+                <td>The Sky Island Saga takes the crew to the sky-bound island of Skypiea, where they encounter the tyrannical god Enel and uncover the island's hidden history. This saga includes the Jaya and Skypiea arcs. The crew learns about the ancient city of Shandora and the Poneglyphs, and they engage in a fierce battle against Enel and his forces to liberate Skypiea. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Thriller Bark</td>
-                    <td>The Thriller Bark Saga takes place on the eerie island of Thriller Bark, where the crew battles the warlord Gecko Moria and his army of zombies. This saga is a single arc, Thriller Bark. The crew encounters Brook, a living skeleton who becomes their musician, and they fight against Moria's powerful minions, including the giant zombie Oars.</td>
-                    <td>
-                        <label for="thriller-bark-rating">Rating:</label><br>
-                        <input type="radio" id="thriller-bark-1" name="thriller-bark-rating" value="1">
-                        <label for="thriller-bark-1">1</label>
-                        <input type="radio" id="thriller-bark-2" name="thriller-bark-rating" value="2">
-                        <label for="thriller-bark-2">2</label>
-                        <input type="radio" id="thriller-bark-3" name="thriller-bark-rating" value="3">
-                        <label for="thriller-bark-3">3</label>
-                        <input type="radio" id="thriller-bark-4" name="thriller-bark-rating" value="4">
-                        <label for="thriller-bark-4">4</label>
-                        <input type="radio" id="thriller-bark-5" name="thriller-bark-rating" value="5">
-                        <label for="thriller-bark-5">5</label>
-                    </td>
+                <td>Water 7</td>
+                <td>The Water 7 Saga sees the crew arriving at the water metropolis of Water 7, where they face the powerful CP9 organization and rescue their crewmate Robin. This saga includes the Long Ring Long Land, Water 7, and Enies Lobby arcs. The crew acquires a new ship, the Thousand Sunny, and they confront the World Government to save Robin, showcasing their unwavering loyalty and strength. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Sabaody Archipelago</td>
-                    <td>The Sabaody Archipelago Saga follows the crew's adventures on the Sabaody Archipelago, where they encounter the Celestial Dragons and the powerful Pacifista. This saga includes the Sabaody Archipelago, Amazon Lily, and Impel Down arcs. The crew is separated by Bartholomew Kuma, leading to Luffy's solo journey to rescue his brother Ace from the underwater prison Impel Down.</td>
-                    <td>
-                        <label for="sabaody-archipelago-rating">Rating:</label><br>
-                        <input type="radio" id="sabaody-archipelago-1" name="sabaody-archipelago-rating" value="1">
-                        <label for="sabaody-archipelago-1">1</label>
-                        <input type="radio" id="sabaody-archipelago-2" name="sabaody-archipelago-rating" value="2">
-                        <label for="sabaody-archipelago-2">2</label>
-                        <input type="radio" id="sabaody-archipelago-3" name="sabaody-archipelago-rating" value="3">
-                        <label for="sabaody-archipelago-3">3</label>
-                        <input type="radio" id="sabaody-archipelago-4" name="sabaody-archipelago-rating" value="4">
-                        <label for="sabaody-archipelago-4">4</label>
-                        <input type="radio" id="sabaody-archipelago-5" name="sabaody-archipelago-rating" value="5">
-                        <label for="sabaody-archipelago-5">5</label>
-                    </td>
+                <td>Thriller Bark</td>
+                <td>The Thriller Bark Saga takes place on the eerie island of Thriller Bark, where the crew battles the warlord Gecko Moria and his army of zombies. This saga is a single arc, Thriller Bark. The crew encounters Brook, a living skeleton who becomes their musician, and they fight against Moria's powerful minions, including the giant zombie Oars. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Marineford</td>
-                    <td>The Marineford Saga is a pivotal saga where the crew is separated, and Luffy participates in the war at Marineford to save his brother Ace. This saga includes the Impel Down, Marineford, and Post-War arcs. The events at Marineford have a profound impact on the world, leading to significant changes in the power dynamics among the pirates and the Marines. The saga is marked by intense battles, emotional moments, and the ultimate sacrifice of Ace, which deeply affects Luffy and his resolve.</td>
-                    <td>
-                        <label for="marineford-rating">Rating:</label><br>
-                        <input type="radio" id="marineford-1" name="marineford-rating" value="1">
-                        <label for="marineford-1">1</label>
-                        <input type="radio" id="marineford-2" name="marineford-rating" value="2">
-                        <label for="marineford-2">2</label>
-                        <input type="radio" id="marineford-3" name="marineford-rating" value="3">
-                        <label for="marineford-3">3</label>
-                        <input type="radio" id="marineford-4" name="marineford-rating" value="4">
-                        <label for="marineford-4">4</label>
-                        <input type="radio" id="marineford-5" name="marineford-rating" value="5">
-                        <label for="marineford-5">5</label>
-                    </td>
+                <td>Sabaody Archipelago</td>
+                <td>The Sabaody Archipelago Saga follows the crew's adventures on the Sabaody Archipelago, where they encounter the Celestial Dragons and the powerful Pacifista. This saga includes the Sabaody Archipelago, Amazon Lily, and Impel Down arcs. The crew is separated by Bartholomew Kuma, leading to Luffy's solo journey to rescue his brother Ace from the underwater prison Impel Down. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Fishman Island</td>
-                    <td>The Fishman Island Saga takes the crew to the underwater Fishman Island, where they confront the New Fishman Pirates and their leader Hody Jones. This saga explores themes of racism and discrimination, highlighting the historical tensions between humans and fish-men. The crew's journey through Fishman Island also reveals significant backstory elements, including the history of the island and its royal family. This saga includes the Fishman Island arc, where the crew's strength and unity are tested, and they gain new allies among the fish-men.</td>
-                    <td>
-                        <label for="fishman-island-rating">Rating:</label><br>
-                        <input type="radio" id="fishman-island-1" name="fishman-island-rating" value="1">
-                        <label for="fishman-island-1">1</label>
-                        <input type="radio" id="fishman-island-2" name="fishman-island-rating" value="2">
-                        <label for="fishman-island-2">2</label>
-                        <input type="radio" id="fishman-island-3" name="fishman-island-rating" value="3">
-                        <label for="fishman-island-3">3</label>
-                        <input type="radio" id="fishman-island-4" name="fishman-island-rating" value="4">
-                        <label for="fishman-island-4">4</label>
-                        <input type="radio" id="fishman-island-5" name="fishman-island-rating" value="5">
-                        <label for="fishman-island-5">5</label>
-                    </td>
+                <td>Marineford</td>
+                <td>The Marineford Saga is a pivotal saga where the crew is separated, and Luffy participates in the war at Marineford to save his brother Ace. This saga includes the Impel Down, Marineford, and Post-War arcs. The events at Marineford have a profound impact on the world, leading to significant changes in the power dynamics among the pirates and the Marines. The saga is marked by intense battles, emotional moments, and the ultimate sacrifice of Ace, which deeply affects Luffy and his resolve. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Punk Hazard</td>
-                    <td>The Punk Hazard Saga sees the crew arriving at the hazardous island of Punk Hazard, where they encounter the mad scientist Caesar Clown and uncover a conspiracy involving the powerful Donquixote Doflamingo. This saga includes the Punk Hazard arc, which is characterized by dangerous experiments, toxic environments, and the formation of new alliances. The crew's actions on Punk Hazard set the stage for future confrontations and reveal the extent of the underworld's influence in the New World.</td>
-                    <td>
-                        <label for="punk-hazard-rating">Rating:</label><br>
-                        <input type="radio" id="punk-hazard-1" name="punk-hazard-rating" value="1">
-                        <label for="punk-hazard-1">1</label>
-                        <input type="radio" id="punk-hazard-2" name="punk-hazard-rating" value="2">
-                        <label for="punk-hazard-2">2</label>
-                        <input type="radio" id="punk-hazard-3" name="punk-hazard-rating" value="3">
-                        <label for="punk-hazard-3">3</label>
-                        <input type="radio" id="punk-hazard-4" name="punk-hazard-rating" value="4">
-                        <label for="punk-hazard-4">4</label>
-                        <input type="radio" id="punk-hazard-5" name="punk-hazard-rating" value="5">
-                        <label for="punk-hazard-5">5</label>
-                    </td>
+                <td>Fishman Island</td>
+                <td>The Fishman Island Saga takes the crew to the underwater Fishman Island, where they confront the New Fishman Pirates and their leader Hody Jones. This saga explores themes of racism and discrimination, highlighting the historical tensions between humans and fish-men. The crew's journey through Fishman Island also reveals significant backstory elements, including the history of the island and its royal family. This saga includes the Fishman Island arc, where the crew's strength and unity are tested, and they gain new allies among the fish-men. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Dressrosa</td>
-                    <td>The Dressrosa Saga follows the crew's journey to the island of Dressrosa, where they battle the warlord Donquixote Doflamingo and his crew. This saga includes the Dressrosa arc and explores themes of freedom and tyranny. The crew's efforts to liberate Dressrosa from Doflamingo's oppressive rule lead to intense battles, strategic alliances, and the revelation of Doflamingo's dark past. The saga also introduces new characters and deepens the lore of the One Piece world.</td>
-                    <td>
-                        <label for="dressrosa-rating">Rating:</label><br>
-                        <input type="radio" id="dressrosa-1" name="dressrosa-rating" value="1">
-                        <label for="dressrosa-1">1</label>
-                        <input type="radio" id="dressrosa-2" name="dressrosa-rating" value="2">
-                        <label for="dressrosa-2">2</label>
-                        <input type="radio" id="dressrosa-3" name="dressrosa-rating" value="3">
-                        <label for="dressrosa-3">3</label>
-                        <input type="radio" id="dressrosa-4" name="dressrosa-rating" value="4">
-                        <label for="dressrosa-4">4</label>
-                        <input type="radio" id="dressrosa-5" name="dressrosa-rating" value="5">
-                        <label for="dressrosa-5">5</label>
-                    </td>
+                <td>Punk Hazard</td>
+                <td>The Punk Hazard Saga sees the crew arriving at the hazardous island of Punk Hazard, where they encounter the mad scientist Caesar Clown and uncover a conspiracy involving the powerful Donquixote Doflamingo. This saga includes the Punk Hazard arc, which is characterized by dangerous experiments, toxic environments, and the formation of new alliances. The crew's actions on Punk Hazard set the stage for future confrontations and reveal the extent of the underworld's influence in the New World. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Zou</td>
-                    <td>The Zou Saga takes the crew to the island of Zou, which is located on the back of a giant elephant. Here, they meet the Mink Tribe and learn about the Road Poneglyphs, which are crucial to finding the One Piece. This saga includes the Zou arc, where the crew forms a strong bond with the Minks and gains valuable information for their journey. The saga also highlights the resilience and strength of the Mink Tribe, as well as the importance of alliances in the quest for the One Piece.</td>
-                    <td>
-                        <label for="zou-rating">Rating:</label><br>
-                        <input type="radio" id="zou-1" name="zou-rating" value="1">
-                        <label for="zou-1">1</label>
-                        <input type="radio" id="zou-2" name="zou-rating" value="2">
-                        <label for="zou-2">2</label>
-                        <input type="radio" id="zou-3" name="zou-rating" value="3">
-                        <label for="zou-3">3</label>
-                        <input type="radio" id="zou-4" name="zou-rating" value="4">
-                        <label for="zou-4">4</label>
-                        <input type="radio" id="zou-5" name="zou-rating" value="5">
-                        <label for="zou-5">5</label>
-                    </td>
+                <td>Dressrosa</td>
+                <td>The Dressrosa Saga follows the crew's journey to the island of Dressrosa, where they battle the warlord Donquixote Doflamingo and his crew. This saga includes the Dressrosa arc and explores themes of freedom and tyranny. The crew's efforts to liberate Dressrosa from Doflamingo's oppressive rule lead to intense battles, strategic alliances, and the revelation of Doflamingo's dark past. The saga also introduces new characters and deepens the lore of the One Piece world. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Whole Cake Island</td>
-                    <td>The Whole Cake Island Saga sees the crew infiltrating the territory of the Yonko Big Mom to rescue their crewmate Sanji. This saga includes the Whole Cake Island arc and explores themes of family and loyalty. The crew faces numerous challenges, including Big Mom's powerful forces, intricate plots, and the complex dynamics of Sanji's family. The saga is marked by high-stakes battles, emotional confrontations, and the crew's unwavering determination to reunite and protect their own.</td>
-                    <td>
-                        <label for="whole-cake-island-rating">Rating:</label><br>
-                        <input type="radio" id="whole-cake-island-1" name="whole-cake-island-rating" value="1">
-                        <label for="whole-cake-island-1">1</label>
-                        <input type="radio" id="whole-cake-island-2" name="whole-cake-island-rating" value="2">
-                        <label for="whole-cake-island-2">2</label>
-                        <input type="radio" id="whole-cake-island-3" name="whole-cake-island-rating" value="3">
-                        <label for="whole-cake-island-3">3</label>
-                        <input type="radio" id="whole-cake-island-4" name="whole-cake-island-rating" value="4">
-                        <label for="whole-cake-island-4">4</label>
-                        <input type="radio" id="whole-cake-island-5" name="whole-cake-island-rating" value="5">
-                        <label for="whole-cake-island-5">5</label>
-                    </td>
+                <td>Zou</td>
+                <td>The Zou Saga takes the crew to the island of Zou, which is located on the back of a giant elephant. Here, they meet the Mink Tribe and learn about the Road Poneglyphs, which are crucial to finding the One Piece. This saga includes the Zou arc, where the crew forms a strong bond with the Minks and gains valuable information for their journey. The saga also highlights the resilience and strength of the Mink Tribe, as well as the importance of alliances in the quest for the One Piece. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Wano Country</td>
-                    <td>The Wano Country Saga follows the crew's journey to the isolated and samurai-themed country of Wano, where they join forces with the samurai to overthrow the tyrannical shogun Orochi and the Yonko Kaido. This saga includes the Wano Country arc and is one of the most significant arcs in the series. The saga delves into the rich culture and history of Wano, the struggles of its people, and the epic battles that ensue. The crew's alliance with the samurai and other powerful figures is crucial in their fight against Kaido's overwhelming might.</td>
-                    <td>
-                        <label for="wano-country-rating">Rating:</label><br>
-                        <input type="radio" id="wano-country-1" name="wano-country-rating" value="1">
-                        <label for="wano-country-1">1</label>
-                        <input type="radio" id="wano-country-2" name="wano-country-rating" value="2">
-                        <label for="wano-country-2">2</label>
-                        <input type="radio" id="wano-country-3" name="wano-country-rating" value="3">
-                        <label for="wano-country-3">3</label>
-                        <input type="radio" id="wano-country-4" name="wano-country-rating" value="4">
-                        <label for="wano-country-4">4</label>
-                        <input type="radio" id="wano-country-5" name="wano-country-rating" value="5">
-                        <label for="wano-country-5">5</label>
-                    </td>
+                <td>Whole Cake Island</td>
+                <td>The Whole Cake Island Saga sees the crew infiltrating the territory of the Yonko Big Mom to rescue their crewmate Sanji. This saga includes the Whole Cake Island arc and explores themes of family and loyalty. The crew faces numerous challenges, including Big Mom's powerful forces, intricate plots, and the complex dynamics of Sanji's family. The saga is marked by high-stakes battles, emotional confrontations, and the crew's unwavering determination to reunite and protect their own. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Egghead Island</td>
-                    <td>The Egghead Island Saga takes the crew to the futuristic Egghead Island, where they encounter advanced technology and new allies. This saga includes the Egghead Island arc and explores themes of innovation and discovery. The crew's adventures on Egghead Island introduce them to cutting-edge inventions, mysterious phenomena, and potential threats. The saga emphasizes the importance of curiosity, adaptability, and the pursuit of knowledge in their ongoing journey.</td>
-                    <td>
-                        <label for="egghead-island-rating">Rating:</label><br>
-                        <input type="radio" id="egghead-island-1" name="egghead-island-rating" value="1">
-                        <label for="egghead-island-1">1</label>
-                        <input type="radio" id="egghead-island-2" name="egghead-island-rating" value="2">
-                        <label for="egghead-island-2">2</label>
-                        <input type="radio" id="egghead-island-3" name="egghead-island-rating" value="3">
-                        <label for="egghead-island-3">3</label>
-                        <input type="radio" id="egghead-island-4" name="egghead-island-rating" value="4">
-                        <label for="egghead-island-4">4</label>
-                        <input type="radio" id="egghead-island-5" name="egghead-island-rating" value="5">
-                        <label for="egghead-island-5">5</label>
-                    </td>
+                <td>Wano Country</td>
+                <td>The Wano Country Saga follows the crew's journey to the isolated and samurai-themed country of Wano, where they join forces with the samurai to overthrow the tyrannical shogun Orochi and the Yonko Kaido. This saga includes the Wano Country arc and is one of the most significant arcs in the series. The saga delves into the rich culture and history of Wano, the struggles of its people, and the epic battles that ensue. The crew's alliance with the samurai and other powerful figures is crucial in their fight against Kaido's overwhelming might. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
                 <tr>
-                    <td>Elbaf</td>
-                    <td>The Elbaf Saga is an anticipated future saga where the crew is expected to visit the land of the giants, Elbaf. This saga is expected to explore themes of strength and honor, and is highly anticipated by fans. The crew's interactions with the giants of Elbaf are likely to reveal new insights into the world's history, the giants' culture, and their own personal growth. The saga is expected to feature epic battles, deep bonds, and significant revelations that will shape the crew's path towards the One Piece.</td>
-                    <td>
-                        <label for="elbaf-rating">Rating:</label><br>
-                        <input type="radio" id="elbaf-1" name="elbaf-rating" value="1">
-                        <label for="elbaf-1">1</label>
-                        <input type="radio" id="elbaf-2" name="elbaf-rating" value="2">
-                        <label for="elbaf-2">2</label>
-                        <input type="radio" id="elbaf-3" name="elbaf-rating" value="3">
-                        <label for="elbaf-3">3</label>
-                        <input type="radio" id="elbaf-4" name="elbaf-rating" value="4">
-                        <label for="elbaf-4">4</label>
-                        <input type="radio" id="elbaf-5" name="elbaf-rating" value="5">
-                        <label for="elbaf-5">5</label>
-                    </td>
+                <td>Egghead Island</td>
+                <td>The Egghead Island Saga takes the crew to the futuristic Egghead Island, where they encounter advanced technology and new allies. This saga includes the Egghead Island arc and explores themes of innovation and discovery. The crew's adventures on Egghead Island introduce them to cutting-edge inventions, mysterious phenomena, and potential threats. The saga emphasizes the importance of curiosity, adaptability, and the pursuit of knowledge in their ongoing journey. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
+                <tr>
+                <td>Elbaf</td>
+                <td>The Elbaf Saga is an anticipated future saga where the crew is expected to visit the land of the giants, Elbaf. This saga is expected to explore themes of strength and honor, and is highly anticipated by fans. The crew's interactions with the giants of Elbaf are likely to reveal new insights into the world's history, the giants' culture, and their own personal growth. The saga is expected to feature epic battles, deep bonds, and significant revelations that will shape the crew's path towards the One Piece. <p>Click the <a href="#" target=_self> page </a> for additional info on this arc</p></td>
+                <td></td>
                 </tr>
+            </div>
             </table>
         </div>
-        </div>
-        </div>
-
-        <div class="main-image">
-            <figure>
-                <img src="#" alt="One Piece Image 1"><br>
-                <img src="#" alt="One Piece Image 2"><br>
-                <img src="#" alt="One Piece Image 3"><br>
-            </figure>
-        </div>
     </main>
-
-    <footer>
-        <h4>All my references are in this<a href="#" style="color: red;"> link</a> | Move to the <a href="#" style="color: red;">Facts</a> page to view deeper content on One Piece</h4>
+    <footer><!--End for teh refences-->
+        <h4>All my references are in this<a href="#" style="color: rgb(250, 246, 246);"> link</a> | Move to the <a href="#" style="color: rgb(238, 238, 238);">Facts</a> page to view deeper content on One Piece</h4>
     </footer>
-
 </body>
-
 </html>

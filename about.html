@@ -1,144 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My One Piece Adventure</title>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>My One Piece Adventure</title> <!-- Title of the webpage -->
     <style>
+        /* General body styling */
         body {
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
+            box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the font family for the body */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
         }
-
+        /* Header styling */
         header {
-            background-color: rgb(179, 24, 24);
-            padding: 20px 50px;
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
+            background-color: rgb(65, 7, 112); /* Sets background color of the header */
+            padding: 20px 50px; /* Adds padding inside the header */
+            align-items: center; /* Centers items vertically */
+            display: flex; /* Uses flexbox layout */
+            justify-content: space-between; /* Distributes space between items */
         }
-
+        /* Header links styling */
         header a {
-            text-decoration: none;
-            color: black;
-            margin-left: 20px;
+            text-decoration: none; /* Removes underline from links */
+            color: black; /* Sets link color */
+            margin-left: 20px; /* Adds left margin to links */
         }
-
+        /* Header links hover effect */
         header a:hover {
-            color: rgb(255, 174, 0);
+            color: rgb(221, 10, 10); /* Changes link color on hover */
         }
-
+        /* Navigation styling */
+        header nav {
+            display: flex; /* Uses flexbox layout */
+            justify-content: space-around; /* Distributes space around items */
+            max-width: 70%; /* Sets maximum width */
+        }
+        /* Header image styling */
+        .header-image img {
+            height: auto; /* Maintains aspect ratio */
+            width: 30%; /* Sets width */
+        }
+        /* Main section styling */
         main {
-            justify-content: space-between;
-            display: flex;
-            padding: 60px;
-            align-items: center;
-            background-color: rgb(177, 95, 41);
-            background-image: linear-gradient(rgb(177, 95, 41), orange);
+            justify-content: space-between; /* Distributes space between items */
+            display: flex; /* Uses flexbox layout */
+            padding: 60px; /* Adds padding inside the main section */
+            align-items: center; /* Centers items vertically */
+            background-color: rgb(5, 5, 5); /* Sets background color */
+            background-image: linear-gradient(rgb(8, 8, 8), rgb(32, 1, 90)); /* Adds gradient background */
         }
-
+        /* Main text styling */
         .main-text {
-            color: black;
-            max-width: 50%;
+            color: rgb(250, 250, 250); /* Sets text color */
+            max-width: 100%; /* Sets maximum width */
         }
-
+        /* Main text headings styling */
         .main-text h1 {
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Adds bottom margin */
         }
-
         .main-text h3 {
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Adds bottom margin */
         }
-
         .main-text h4 {
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Adds bottom margin */
         }
-
         .main-text p {
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Adds bottom margin */
         }
-
+        /* Main image styling */
         .main-image img {
-            border-radius: 10px;
-            width: 90%;
-            height: 10%;
+            border-radius: 10px; /* Rounds the corners */
+            width: 90%; /* Sets width */
+            height: 10%; /* Sets height */
         }
-
+        /* Main text links styling */
         .main-text a {
-            color: black;
-            margin-bottom: 30px;
-            text-decoration: none;
+            color: rgb(255, 255, 255); /* Sets link color */
+            margin-bottom: 30px; /* Adds bottom margin */
+            text-decoration: none; /* Removes underline from links */
         }
-
+        /* Main text links hover effect */
         .main-text a:hover {
-            color: rgb(216, 11, 11);
+            color: rgb(33, 6, 105); /* Changes link color on hover */
         }
-
+        /* Main iframe styling */
+        .main-iframe {
+            margin-top: 30px; /* Adds top margin */
+            display: inline-block; /* Displays as inline-block */
+            border-radius: 10px; /* Rounds the corners */
+        }
+        /* Footer styling */
         footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgb(77, 41, 18);
+            text-align: center; /* Centers text */
+            padding: 20px; /* Adds padding inside the footer */
+            background-color: rgb(39, 3, 87); /* Sets background color */
         }
-
+        /* Footer links styling */
         footer a {
-            text-decoration: none;
-            color: black;
+            text-decoration: none; /* Removes underline from links */
+            color: rgb(255, 255, 255); /* Sets link color */
         }
-
+        /* Footer links hover effect */
         footer a:hover {
-            color: rgb(255, 174, 0);
+            color: rgb(121, 17, 17); /* Changes link color on hover */
         }
     </style>
 </head>
-
 <body>
     <header>
         <div class="header-image">
-            <a href="index.html" target="_self"><figure><img src="#" alt="One Piece"></figure></a>
+            <a href="index.html" target="_self"><figure><img src="images/One-Piece-Logo.png" alt="One Piece" title="From Logos-World"></figure></a> <!-- Logo with link to home page -->
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">Facts</a>
-            <a href="feedback.html">Feedback</a>
+            <a href="index.html">Home</a> <!-- Link to home page -->
+            <a href="about.html">Facts</a> <!-- Link to about page -->
+            <a href="feedback.html">Feedback</a> <!-- Link to feedback page -->
         </nav>
     </header>
-
     <main>
         <div class="main-text">
-            <h1><b>What is One Piece?</b></h1>
-            <p>One Piece is a Japanese manga series written and illustrated by Eiichiro Oda, it has been serialized in Shueisha's Weekly Shōnen Jump magazine since July 22, 1997, and has been collected into 98 volumes as of April 2021.</p>
-            <p><i><b>This page will cover the history, background and themes of the manga series</b></i></p>
-            <h2><b>History & Background</b></h2>
-            <p>One Piece is known for its huge popularity worldwide. The manga series has captivated millions of fans with its unique blend of adventure, humor, and heartfelt moments. The beautifully crafted world-building, diverse and well-developed characters, and the theme of pursuing one's dreams resonate deeply with readers. Additionally, the creative, unpredictable story arcs keep fans eagerly anticipating each new chapter. This combination of elements has solidified One Piece as one of the most beloved and enduring manga series of all time.</p>
-            <p>One Piece is the best-selling manga of all time, with over 516.6 million copies sold to 2022. It was the record holder for most copies printed by a single author and spent 11 straight years at number one. The series has sold in gigantic print runs and topped manga bestseller lists since 2008.</p>
-            <hr style="border-color: black;">
-            <h2><b><u>Story and Themes</u></b></h2>
-            <h3>Setting</h3>
-            <p>The world of One Piece is inhabited by various races such as humans, dwarves, giants, merfolk, fish-men, long-limbed tribes, Snakeneck Tribe, and Minks. It is governed by the World Government, with the Navy and Cipher Pol as its military and secret police forces. Pirates oppose the Government, with the Revolutionary Army aiming to overthrow it. The series explores moral ambiguity, challenging the traditional idea of pirates as villains.</p>
-            <p>Supernatural elements include Devil Fruits, which grant powers but make users vulnerable to water, and Haki, which enhances willpower and fighting abilities.</p>
-            <p>Geographically, the world consists of four seas (North, East, West, South Blue) and is divided by the Red Line mountain range. The Grand Line, a perilous sea, runs perpendicular to the Red Line and is bounded by the Calm Belt, home to dangerous Sea Kings. Passage between these regions is difficult, with unique methods like Sea Prism Stone or Reverse Mountain enabling travel. The Grand Line is divided into Paradise and the New World.</p>
-            <h3>Story</h3>
-            <p>The series follows Monkey D. Luffy, a young man with rubber-like abilities after eating the Gum-Gum Fruit, who embarks on a journey from the East Blue Sea to find the legendary treasure "One Piece" and become the next King of the Pirates. As captain of the Straw Hat Pirates, Luffy is joined by a diverse crew, including swordsman Roronoa Zoro, navigator Nami, sniper Usopp, cook Sanji, reindeer doctor Tony Tony Chopper, archaeologist Nico Robin, shipwright Franky, musician Brook, and helmsman Jimbei. Together, they sail on their ship, the Going Merry (later the Thousand Sunny), facing off against pirates, bounty hunters, the World Government, and other adversaries while pursuing their dreams and forming lasting bonds.</p>
-            <p>Click this <a href="https://onepiece.fandom.com/wiki/Story_Arcs" target="_blank"> page </a> in order to view more on the story and arcs.</p>
-            <h3>Themes</h3>
-            <p><b>The Pursuit of Dreams:</b> One Piece cahrcaters has a unique dream from Monkey D. Luffy wanting to become Pirate King to the rest of the characters</p>
-        </div>
-
-        <div class="main-image">
-            <figure>
-                <img src="#" alt="One Piece Image 1"><br>
-                <img src="#" alt="One Piece Image 2"><br>
-                <img src="#" alt="One Piece Image 3"><br>
-            </figure>
+            <h1><b>What is One Piece?</b></h1> <!-- Main heading -->
+            <p>One Piece is a Japanese manga series written and illustrated by Eiichiro Oda, it has been serialized in Shueisha's Weekly Shōnen Jump magazine since July 22, 1997, and has been collected into 98 volumes as of April 2021.</p> <!-- Paragraph about One Piece -->
+            <p><i><b>This page will cover the history, background and themes of the manga series</b></i></p> <!-- Introductory paragraph -->
+            <h2><b>History & Background</b></h2> <!-- Subheading -->
+            <p>One Piece is known for its huge popularity worldwide. The manga series has captivated millions of fans with its unique blend of adventure, humor, and heartfelt moments. The beautifully crafted world-building, diverse and well-developed characters, and the theme of pursuing one's dreams resonate deeply with readers. Additionally, the creative, unpredictable story arcs keep fans eagerly anticipating each new chapter. This combination of elements has solidified One Piece as one of the most beloved and enduring manga series of all time.</p> <!-- Paragraph about history and background -->
+            <p>One Piece is the best-selling manga of all time, with over 516.6 million copies sold to 2022. It was the record holder for most copies printed by a single author and spent 11 straight years at number one. The series has sold in gigantic print runs and topped manga bestseller lists since 2008.</p> <!-- Paragraph about sales and records -->
+            <hr style="border-color: black;"> <!-- Horizontal rule -->
+            <h2><b><u>Story and Themes</u></b></h2> <!-- Subheading -->
+            <h3>Setting</h3> <!-- Sub-subheading -->
+            <p>The world of One Piece is inhabited by various races such as humans, dwarves, giants, merfolk, fish-men, long-limbed tribes, Snakeneck Tribe, and Minks. It is governed by the World Government, with the Navy and Cipher Pol as its military and secret police forces. Pirates oppose the Government, with the Revolutionary Army aiming to overthrow it. The series explores moral ambiguity, challenging the traditional idea of pirates as villains.</p> <!-- Paragraph about setting -->
+            <p>Supernatural elements include Devil Fruits, which grant powers but make users vulnerable to water, and Haki, which enhances willpower and fighting abilities.</p> <!-- Paragraph about supernatural elements -->
+            <p>Geographically, the world consists of four seas (North, East, West, South Blue) and is divided by the Red Line mountain range. The Grand Line, a perilous sea, runs perpendicular to the Red Line and is bounded by the Calm Belt, home to dangerous Sea Kings. Passage between these regions is difficult, with unique methods like Sea Prism Stone or Reverse Mountain enabling travel. The Grand Line is divided into Paradise and the New World.</p> <!-- Paragraph about geography -->
+            <h3>Story</h3> <!-- Sub-subheading -->
+            <p>The series follows Monkey D. Luffy, a young man with rubber-like abilities after eating the Gum-Gum Fruit, who embarks on a journey from the East Blue Sea to find the legendary treasure "One Piece" and become the next King of the Pirates. As captain of the Straw Hat Pirates, Luffy is joined by a diverse crew, including swordsman Roronoa Zoro, navigator Nami, sniper Usopp, cook Sanji, reindeer doctor Tony Tony Chopper, archaeologist Nico Robin, shipwright Franky, musician Brook, and helmsman Jimbei. Together, they sail on their ship, the Going Merry (later the Thousand Sunny), facing off against pirates, bounty hunters, the World Government, and other adversaries while pursuing their dreams and forming lasting bonds.</p> <!-- Paragraph about story -->
+            <p>Click this <a href="https://onepiece.fandom.com/wiki/Story_Arcs" target="_blank"> page </a> in order to view more on the story and arcs.</p> <!-- Link to more information -->
+            <h3>Themes</h3> <!-- Sub-subheading -->
+            <p><b>The Pursuit of Dreams:</b> One Piece characters each have a unique dream, from Monkey D. Luffy wanting to become the Pirate King to the rest of the characters pursuing their own goals. This theme emphasizes the importance of having dreams and the determination to achieve them, no matter the obstacles. Each character's journey and growth are driven by their dreams.</p> <!-- Paragraph about theme -->
+            <p><b>Friendship and Loyalty:</b> The bonds between the Straw Hat Pirates are central to the story. Their unwavering loyalty and support for each other highlight the importance of friendship and camaraderie. These relationships are tested and strengthened through their adventures.</p> <!-- Paragraph about theme -->
+            <p><b>Freedom:</b> The desire for freedom is a recurring theme in One Piece. Characters seek freedom from oppression, societal norms, and personal limitations. Luffy's quest to become the Pirate King symbolizes the ultimate freedom to explore the world and live without constraints.</p> <!-- Paragraph about theme -->
+            <p><b>Justice:</b> One Piece explores different interpretations of justice, from the World Government's strict enforcement to the pirates' more personal sense of right and wrong. The series challenges the notion of absolute justice and highlights the complexity of moral decisions.</p> <!-- Paragraph about theme -->
+            <p><b>Perseverance and Resilience:</b> The characters in One Piece face numerous challenges and setbacks, but their perseverance and resilience enable them to overcome obstacles. This theme underscores the importance of never giving up, even in the face of adversity.</p> <!-- Paragraph about theme -->
+            <p><b>Loss and Sacrifice:</b> Characters in One Piece often experience loss and make significant sacrifices for their dreams and friends. This theme highlights the emotional and physical toll of their journeys and the strength required to continue despite these hardships.</p> <!-- Paragraph about theme -->
+            <p><b>Betrayal:</b> Betrayal is a recurring theme in One Piece, with characters facing treachery from allies and enemies alike. This theme explores the impact of betrayal on trust and relationships, and how characters cope with the aftermath.</p> <!-- Paragraph about theme -->
+            <p><b>Corruption:</b> The series delves into the corruption within the World Government and other organizations, exposing the darker side of power and authority. This theme critiques the abuse of power and the consequences it has on society.</p> <!-- Paragraph about theme -->
+            <li><b>Fish-Men and Merfolk:</b> Aquatic beings with exceptional swimming abilities and unique physical traits.</li> <!-- List item about races -->
+            <li><b>Giants:</b> Massive humanoid creatures known for their immense strength.</li> <!-- List item about races -->
+            <li><b>Minks:</b> Animal-human hybrids with heightened senses and agility.</li> <!-- List item about races -->
+            <li><b>Dwarves:</b> Small, fairy-like beings with a knack for craftsmanship.</li> <!-- List item about races -->
+            <li><b>Long-Limbed Tribes:</b> Humanoids with elongated limbs, aiding in combat and navigation.</li> <!-- List item about races -->
+            <li><b>Snakeneck Tribe:</b> Humanoids with elongated necks, offering unique perspectives and abilities.</li> <!-- List item about races -->
+            </ul>
+            <h3>Devil Fruits</h3> <!-- Sub-subheading -->
+            <p>Devil Fruits are mystical fruits that grant those who consume them extraordinary abilities, often at the cost of losing the ability to swim. They are categorized into three main types:</p> <!-- Paragraph about Devil Fruits -->
+            <ul>
+                <li><b>Paramecia:</b> Fruits that grant the user abilities affecting their body or the environment.</li> <!-- List item about Devil Fruits -->
+                <li><b>Zoan:</b> Fruits that allow the user to transform into an animal or a hybrid form.</li> <!-- List item about Devil Fruits -->
+                <li><b>Logia:</b> Fruits that enable the user to transform into, produce, and control a particular element or substance.</li> <!-- List item about Devil Fruits -->
+            </ul>
+            <h3>Haki</h3> <!-- Sub-subheading -->
+            <p>Haki is a mysterious power that grants individuals special abilities, including:</p> <!-- Paragraph about Haki -->
+            <ul>
+                <li><b>Observation Haki:</b> The ability to sense the presence and emotions of others, even if they are hidden.</li> <!-- List item about Haki -->
+                <li><b>Armament Haki:</b> The ability to create invisible armor around oneself or objects, enhancing defense and offensive capabilities.</li> <!-- List item about Haki -->
+                <li><b>Conqueror's Haki:</b> A rare form of Haki that allows the user to exert their willpower over others, intimidating or even incapacitating them.</li> <!-- List item about Haki -->
+            </ul>
+            <h3>The World Government and the Marines</h3> <!-- Sub-subheading -->
+            <p>The World Government is a vast organization comprising numerous nations, with the Marines serving as its military arm. They are tasked with maintaining order and combating piracy, often employing morally ambiguous methods. The series explores themes of justice, corruption, and the complexities of governance through their actions.</p> <!-- Paragraph about World Government and Marines -->
+            <h3>Revolutionary Army</h3> <!-- Sub-subheading -->
+            <p>Opposing the World Government is the Revolutionary Army, a clandestine organization aiming to overthrow the oppressive regime. They operate from the shadows, seeking to liberate oppressed peoples and challenge the status quo.</p> <!-- Paragraph about Revolutionary Army -->
+            <h3>The Yonko and the Seven Warlords of the Sea</h3> <!-- Sub-subheading -->
+            <p>The balance of power on the seas is maintained by the Yonko (Four Emperors), the most powerful pirate captains, and the Seven Warlords of the Sea, notorious pirates who have allied with the World Government. These factions play pivotal roles in the political and power dynamics of the world.</p> <!-- Paragraph about Yonko and Seven Warlords -->
+            <h3>The Void Century and the Poneglyphs</h3> <!-- Sub-subheading -->
+            <p>A significant element of the world's history is the Void Century, a period erased from official records. The Poneglyphs are ancient stone tablets that hold the key to uncovering this lost history, with the Revolutionary Army and other factions seeking to reveal the truth.</p> <!-- Paragraph about Void Century and Poneglyphs -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TWC6iJV2LOw?si=FdvtO0U6bJSYB240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Embedded YouTube video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H2Dggf8kKhI?si=XrwphcoF9Sk6ty-5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Embedded YouTube video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uJZn7Qfmc2U?si=pTv5ChlNldTFRKzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Embedded YouTube video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kCC8o89sA0M?si=TVIn9vp6T09RCHq2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Embedded YouTube video -->
         </div>
     </main>
-
     <footer>
-        <h4>All my references are in this<a href="#" style="color: red;"> link</a> | Move to the <a href="#" style="color: red;">Facts</a> page to view deeper content on One Piece</h4>
+        <h4>All my references are in this<a href="#" style="color: rgb(238, 238, 238);"> link</a> | Move to the <a href="#" style="color: rgb(240, 235, 235);">Facts</a> page to view deeper content on One Piece</h4> <!-- Footer with links -->
     </footer>
 </body>
-
 </html>

@@ -1,22 +1,25 @@
 <!--Name:  Nwaeleme Ugonna Brian
-
-Course: Web Development 10S 
-
-Teacher: Ms. Hoitink 
-
-School: Pembina Trails Collegiate (PTC) 
-
+Course: Web Development 10S
+Teacher: Ms. Hoitink
+School: Pembina Trails Collegiate (PTC)
 Date Last Modified: 2/20/2025 -->
 
-
 <!DOCTYPE html>
+<!-- This declaration defines the document type and version of HTML being used -->
+
 <html lang="en">
+<!-- The opening tag for the HTML document, with the language attribute set to English -->
 
 <head>
+    <!-- The head section contains meta-information about the document -->
     <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the HTML document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the webpage is responsive and adjusts to different screen sizes -->
     <title>My One Piece Adventure</title>
+    <!-- The title of the webpage, displayed in the browser tab -->
     <style>
+        /* CSS styles for the webpage */
         body {
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -25,11 +28,16 @@ Date Last Modified: 2/20/2025 -->
         }
 
         header {
-            background-color: rgb(179, 24, 24);
+            background-color: rgb(65, 7, 112);
             padding: 20px 50px;
             align-items: center;
             display: flex;
             justify-content: space-between;
+        }
+
+        .header-image img {
+            height: auto;
+            width: 30%;
         }
 
         header a {
@@ -39,7 +47,13 @@ Date Last Modified: 2/20/2025 -->
         }
 
         header a:hover {
-            color: rgb(255, 174, 0);
+            color: rgb(232, 19, 19);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-around;
+            max-width: 70%;
         }
 
         main {
@@ -47,12 +61,12 @@ Date Last Modified: 2/20/2025 -->
             display: block;
             padding: 60px;
             align-items: center;
-            background-color: rgb(177, 95, 41);
-            background-image: linear-gradient(rgb(177, 95, 41), orange);
+            background-color: rgb(5, 5, 5);
+            background-image: linear-gradient(rgb(8, 8, 8), rgb(32, 1, 90));
         }
 
         .main-text {
-            color: black;
+            color: rgb(255, 255, 255);
             max-width: 50%;
         }
 
@@ -67,14 +81,16 @@ Date Last Modified: 2/20/2025 -->
         .main-text h4 {
             margin-bottom: 30px;
         }
+
         .main-text h4 a {
             margin-bottom: 30px;
             text-decoration: none;
-            color: black;
+            color: rgb(245, 243, 243);
         }
-        .main-text h4 a:hover{
+
+        .main-text h4 a:hover {
             margin-bottom: 30px;
-            color: red;
+            color: rgb(51, 6, 110);
         }
 
         .main-text p {
@@ -83,9 +99,12 @@ Date Last Modified: 2/20/2025 -->
 
         .main-image img {
             border-radius: 10px;
-            width: 90%;
-            height: 10%;
+            width: 45%;
+            height: auto;
+            display: inline-block;
+            margin: 10px;
         }
+
         .main-image button {
             border-radius: 10px;
             width: 90%;
@@ -101,39 +120,51 @@ Date Last Modified: 2/20/2025 -->
         footer {
             text-align: center;
             padding: 20px;
-            background-color: rgb(77, 41, 18);
+            background-color: rgb(39, 3, 87);
         }
 
         footer a {
             text-decoration: none;
-            color: black;
+            color: rgb(255, 255, 255);
         }
 
         footer a:hover {
-            color: rgb(255, 174, 0);
+            color: rgb(121, 17, 17);
         }
+
         .icon {
             display: inline-block;
         }
-        .icon img{
+
+        .icon img {
             width: 50px;
             height: 50px;
             margin: 10px;
             padding: 10px;
         }
-        .icon figure{
+
+        .icon figure {
             display: inline-block;
-            
         }
     </style>
 </head>
 
 <body>
+    <!-- The body section contains the content of the webpage -->
     <header>
+        <!-- The header section contains the navigation bar and logo -->
         <div class="header-image">
-            <a href="index.html" target="_self"><figure><img src="#" alt="One Piece"></figure></a>
+            <!-- Container for the logo image -->
+            <a href="index.html" target="_self">
+                <!-- Link to the homepage -->
+                <figure>
+                    <img src="images/One-Piece-Logo.png" alt="One Piece" title="From Logos-World">
+                    <!-- Logo image with alt text and title -->
+                </figure>
+            </a>
         </div>
         <nav>
+            <!-- Navigation bar with links to different pages -->
             <a href="index.html">Home</a>
             <a href="about.html">Facts</a>
             <a href="feedback.html">Feedback</a>
@@ -141,29 +172,64 @@ Date Last Modified: 2/20/2025 -->
     </header>
 
     <main>
+        <!-- The main section contains the main content of the webpage -->
         <div class="main-text">
+            <!-- Container for the main text content -->
             <h1><b><u>Welcome to my One Piece Hobby showcase!</u></b></h1>
+            <!-- Main heading with bold and underline -->
             <h3>This page is built to share my love for One Piece with you.</h3>
+            <!-- Subheading -->
             <h4>Feel free to click this <a href="about.html" target="_self"> <u>link</u> </a> to go deeper with me.</h4>
+            <!-- Link to another page with underline -->
         </div>
 
         <div class="main-image">
+            <!-- Container for the main images -->
             <figure>
-                <img src="#" alt="One Piece Image 1">
-                <img src="#" alt="One Piece Image 2">
-                <img src="#" alt="One Piece Image 3">
+                <!-- Figure element to group images -->
+                <img src="images/WOgrU9u.jpeg" alt="One Piece Image 1" title="From Berisha11 on Reddit">
+                <!-- Image with alt text and title -->
+                <img src="images/one_piece_ch741_p002-003.jpg" alt="One Piece Image 2" title="From Berisha11 on Reddit">
+                <!-- Image with alt text and title -->
+                <img src="images/CsceKsX.jpeg" alt="One Piece Image 3" title="From Berisha11 on Reddit">
+                <!-- Image with alt text and title -->
+                <img src="images/75tL0LT.jpeg" alt="One Piece Image 3" title="From Berisha11 on Reddit">
+                <!-- Image with alt text and title -->
             </figure>
         </div>
     </main>
 
     <footer>
-        <h4>All my references are in this<a href="#" style="color: red;"> link</a> | Move to the <a href="#" style="color: red;">Facts</a> page to view deeper content on One Piece</h4>
+        <!-- The footer section contains the footer content -->
+        <h4>All my references are in this<a href="#" style="color: rgb(250, 249, 249);"> link</a> | Move to the <a href="#" style="color: rgb(235, 230, 230);">Facts</a> page to view deeper content on One Piece</h4>
+        <!-- Footer text with links -->
         <div class="icon">
-        <a href="#" target="_blank"><figure><img src="img/google.png"></figure></a>
-        <a href="#" target="_blank"><figure><img src="img/apple.png"></figure></a>
-        <a href="#" target="_blank"><figure><img src="img/facebook.png"></figure></a>
-        <a href="#" target="_blank"><figure><img src="img/microsoft.png"></figure></a>
-        </div> 
+            <!-- Container for social media icons -->
+            <a href="#" target="_blank">
+                <figure>
+                    <img src="images/google.png">
+                    <!-- Google icon -->
+                </figure>
+            </a>
+            <a href="#" target="_blank">
+                <figure>
+                    <img src="images/apple.png">
+                    <!-- Apple icon -->
+                </figure>
+            </a>
+            <a href="#" target="_blank">
+                <figure>
+                    <img src="images/facebook.png">
+                    <!-- Facebook icon -->
+                </figure>
+            </a>
+            <a href="#" target="_blank">
+                <figure>
+                    <img src="images/microsoft.png">
+                    <!-- Microsoft icon -->
+                </figure>
+            </a>
+        </div>
     </footer>
 
 </body>
