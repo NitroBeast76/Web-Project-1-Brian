@@ -1,146 +1,129 @@
 <!--Name:  Nwaeleme Ugonna Brian
-Course: Web Development 10S
-Teacher: Ms. Hoitink
-School: Pembina Trails Collegiate (PTC)
-Date Last Modified: 2/20/2025 -->
 
+Course: Web Development 10S 
+
+Teacher: Ms. Hoitink 
+
+School: Pembina Trails Collegiate (PTC) 
+
+Date Last Modified: 2/24/2025  -->
 <!DOCTYPE html>
-<!-- This declaration defines the document type and version of HTML being used -->
-
 <html lang="en">
-<!-- The opening tag for the HTML document, with the language attribute set to English -->
-
 <head>
-    <!-- The head section contains meta-information about the document -->
-    <meta charset="UTF-8">
-    <!-- Specifies the character encoding for the HTML document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ensures the webpage is responsive and adjusts to different screen sizes -->
-    <title>My One Piece Adventure</title>
-    <!-- The title of the webpage, displayed in the browser tab -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>Explore Nigeria</title> <!-- Title of the webpage -->
     <style>
-        /* CSS styles for the webpage */
+        /* General body styling */
         body {
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
+            box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the font family for the body */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
         }
 
         header {
-            background-color: rgb(65, 7, 112);
-            padding: 20px 50px;
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
+            background-color: #008751; /* Green color representing Nigeria */
+            padding: 20px 50px; /* Padding inside the header */
+            align-items: center; /* Aligns items vertically in the center */
+            display: flex; /* Uses flexbox layout */
+            justify-content: space-between; /* Distributes space between items */
         }
 
         .header-image img {
-            height: auto;
-            width: 30%;
+            height: auto; /* Maintains aspect ratio */
+            width: 30%; /* Sets the width of the image */
         }
 
         header a {
-            text-decoration: none;
-            color: black;
-            margin-left: 20px;
+            text-decoration: none; /* Removes underline from links */
+            color: white; /* Sets link color to white */
+            margin-left: 20px; /* Adds margin to the left of links */
         }
 
         header a:hover {
-            color: rgb(232, 19, 19);
+            color: #FFD700; /* Gold color for hover effect */
         }
 
         header nav {
-            display: flex;
-            justify-content: space-around;
-            max-width: 70%;
+            display: flex; /* Uses flexbox layout */
+            justify-content: space-around; /* Distributes space around items */
+            max-width: 70%; /* Sets maximum width of the navigation */
         }
 
         main {
-            justify-content: space-between;
-            display: block;
-            padding: 60px;
-            align-items: center;
-            background-color: rgb(5, 5, 5);
-            background-image: linear-gradient(rgb(8, 8, 8), rgb(32, 1, 90));
+            justify-content: space-between; /* Distributes space between items */
+            display: block; /* Sets display to block */
+            padding: 60px; /* Adds padding inside the main section */
+            align-items: center; /* Aligns items vertically in the center */
+            background-color: #1C1C1C; /* Dark background */
+            color: white; /* Sets text color to white */
         }
 
         .main-text {
-            color: rgb(255, 255, 255);
-            max-width: 50%;
+            color: white; /* Sets text color to white */
+            max-width: 50%; /* Sets maximum width of the text container */
         }
 
         .main-text h1 {
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Adds margin below the heading */
         }
 
         .main-text h3 {
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Adds margin below the heading */
         }
 
         .main-text h4 {
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Adds margin below the heading */
         }
 
         .main-text h4 a {
-            margin-bottom: 30px;
-            text-decoration: none;
-            color: rgb(245, 243, 243);
+            margin-bottom: 30px; /* Adds margin below the link */
+            text-decoration: none; /* Removes underline from links */
+            color: #FFD700; /* Gold color for links */
         }
 
         .main-text h4 a:hover {
-            margin-bottom: 30px;
-            color: rgb(51, 6, 110);
+            color: #008751; /* Green color for hover */
         }
 
         .main-text p {
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Adds margin below the paragraph */
         }
 
         .main-image img {
-            border-radius: 10px;
-            width: 45%;
-            height: auto;
-            display: inline-block;
-            margin: 10px;
-        }
-
-        .main-image button {
-            border-radius: 10px;
-            width: 90%;
-            height: 10%;
-            display: inline-block;
-        }
-
-        .main-text iframe {
-            margin-top: 20px;
-            display: inline-block;
+            border-radius: 10px; /* Rounds the corners of the images */
+            width: 45%; /* Sets the width of the images */
+            height: auto; /* Maintains aspect ratio */
+            display: inline-block; /* Displays images inline */
+            margin: 10px; /* Adds margin around the images */
         }
 
         footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgb(39, 3, 87);
+            text-align: center; /* Centers the text */
+            padding: 20px; /* Adds padding inside the footer */
+            background-color: #008751; /* Green color for footer */
+            color: white; /* Sets text color to white */
         }
 
         footer a {
-            text-decoration: none;
-            color: rgb(255, 255, 255);
+            text-decoration: none; /* Removes underline from links */
+            color: white; /* Sets link color to white */
         }
 
         footer a:hover {
-            color: rgb(121, 17, 17);
+            color: #FFD700; /* Gold color for hover */
         }
 
         .icon {
-            display: inline-block;
+            display: inline-block; /* Displays icons inline */
         }
 
         .icon img {
-            width: 50px;
-            height: 50px;
-            margin: 10px;
-            padding: 10px;
+            width: 50px; /* Sets the width of the icons */
+            height: 50px; /* Sets the height of the icons */
+            margin: 10px; /* Adds margin around the icons */
+            padding: 10px; /* Adds padding inside the icons */
         }
 
         .icon figure {
@@ -148,90 +131,64 @@ Date Last Modified: 2/20/2025 -->
         }
     </style>
 </head>
-
 <body>
-    <!-- The body section contains the content of the webpage -->
     <header>
-        <!-- The header section contains the navigation bar and logo -->
         <div class="header-image">
-            <!-- Container for the logo image -->
-            <a href="index.html" target="_self">
-                <!-- Link to the homepage -->
+            <a href="index.html" target="_self"> <!-- Link to the homepage -->
                 <figure>
-                    <img src="images/One-Piece-Logo.png" alt="One Piece" title="From Logos-World">
-                    <!-- Logo image with alt text and title -->
+                    <img src="images/nigeria-flag-removebg-preview.png" alt="Nigeria Flag" title="Nigeria Flag"> <!-- Nigeria flag image -->
                 </figure>
             </a>
         </div>
         <nav>
-            <!-- Navigation bar with links to different pages -->
-            <a href="index.html">Home</a>
-            <a href="about.html">Facts</a>
-            <a href="feedback.html">Feedback</a>
+            <a href="index.html">Home</a> <!-- Link to the homepage -->
+            <a href="about.html">About Nigeria</a> <!-- Link to the about page -->
+            <a href="feedback.html">Feedback</a> <!-- Link to the feedback page -->
         </nav>
     </header>
 
     <main>
-        <!-- The main section contains the main content of the webpage -->
         <div class="main-text">
-            <!-- Container for the main text content -->
-            <h1><b><u>Welcome to my One Piece Hobby showcase!</u></b></h1>
-            <!-- Main heading with bold and underline -->
-            <h3>This page is built to share my love for One Piece with you.</h3>
-            <!-- Subheading -->
-            <h4>Feel free to click this <a href="about.html" target="_self"> <u>link</u> </a> to go deeper with me.</h4>
-            <!-- Link to another page with underline -->
+            <h1><b><u><i>Welcome to Nigeria!</i></u></b></h1> <!-- Main heading -->
+            <h3>Discover the beauty, culture, and history of Nigeria.</h3> <!-- Subheading -->
+            <h4>Feel free to click this <a href="about.html" target="_self"> <u>link</u> </a> to learn more about Nigeria.</h4> <!-- Link to the about page -->
+            <p><s>Disclaimer: You might fall in love with Nigeria!</s></p> <!-- Disclaimer text -->
         </div>
 
         <div class="main-image">
-            <!-- Container for the main images -->
             <figure>
-                <!-- Figure element to group images -->
-                <img src="images/WOgrU9u.jpeg" alt="One Piece Image 1" title="From Berisha11 on Reddit">
-                <!-- Image with alt text and title -->
-                <img src="images/one_piece_ch741_p002-003.jpg" alt="One Piece Image 2" title="From Berisha11 on Reddit">
-                <!-- Image with alt text and title -->
-                <img src="images/CsceKsX.jpeg" alt="One Piece Image 3" title="From Berisha11 on Reddit">
-                <!-- Image with alt text and title -->
-                <img src="images/75tL0LT.jpeg" alt="One Piece Image 3" title="From Berisha11 on Reddit">
-                <!-- Image with alt text and title -->
+                <img src="images/omotayo-tajudeen-ME416b6sp2I-unsplash.jpg" alt="Nigeria Market Image" title="from unsplash"> <!-- Image of Nigeria market -->
+                <img src="images/nupo-deyon-daniel-67ruAEYmp4c-unsplash.jpg" alt="City overview of nigeria" title="from unsplash"> <!-- Image of city overview -->
+                <img src="images/david-rotimi-LxENUKJXh_k-unsplash.jpg" alt="Abuja City monument" title="from unsplash"> <!-- Image of Abuja city monument -->
+                <img src="images/emmanuel-ikwuegbu-T4q6ZPpYjog-unsplash.jpg" alt="Nigerian Citizen Holding Nigerian Flag" title="from unsplash"> <!-- Image of Nigerian citizen holding flag -->
             </figure>
         </div>
     </main>
 
     <footer>
-        <!-- The footer section contains the footer content -->
-        <h4>All my references are in this<a href="#" style="color: rgb(250, 249, 249);"> link</a> | Move to the <a href="#" style="color: rgb(235, 230, 230);">Facts</a> page to view deeper content on One Piece</h4>
-        <!-- Footer text with links -->
+        <h4>All my references are in this<a href="sources.html" style="color: #FFD700;"> link</a> | Move to the <a href="about.html" style="color: #FFD700;">About Nigeria</a> page to view deeper content.</h4> <!-- Footer text with links -->
         <div class="icon">
-            <!-- Container for social media icons -->
-            <a href="#" target="_blank">
+            <a href="#" target="_blank"> <!-- Placeholder link for Google -->
                 <figure>
-                    <img src="images/google.png">
-                    <!-- Google icon -->
+                    <img src="images/google.png" alt="Google"> <!-- Google icon -->
                 </figure>
             </a>
-            <a href="#" target="_blank">
+            <a href="#" target="_blank"> <!-- Placeholder link for Facebook -->
                 <figure>
-                    <img src="images/apple.png">
-                    <!-- Apple icon -->
+                    <img src="images/facebook.png" alt="Facebook"> <!-- Facebook icon -->
                 </figure>
             </a>
-            <a href="#" target="_blank">
+            <a href="#" target="_blank"> <!-- Placeholder link for microsoft -->
                 <figure>
-                    <img src="images/facebook.png">
-                    <!-- Facebook icon -->
+                    <img src="images/microsoft.png" alt="Twitter"> <!-- microsoft icon -->
                 </figure>
             </a>
-            <a href="#" target="_blank">
+            <a href="#" target="_blank"> <!-- Placeholder link for apple -->
                 <figure>
-                    <img src="images/microsoft.png">
-                    <!-- Microsoft icon -->
+                    <img src="images/apple.png" alt="Twitter"> <!-- apple icon -->
                 </figure>
             </a>
         </div>
     </footer>
-
 </body>
-
 </html>
