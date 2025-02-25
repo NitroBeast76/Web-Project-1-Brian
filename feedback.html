@@ -122,6 +122,49 @@
         footer a:hover {
             color: #FFD700; /* Gold color for hover */
         }
+        /*Modal styling*/
+        .modal{
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0 ,0, 0, 0.5,); /* Black background with opacity */
+        }
+        .modal-content{
+            background-color: green;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid grey;
+            width: 80%;
+            max-width: 600px;
+            color: gold;
+        }
+        .close{
+            color: rgb(125, 124, 122);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus{
+            color: #676767;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        button{
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: goldenrod;
+        }
+        input text{
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            border: 1px solid grey;
+        }
     </style>
 </head>
 <body>
@@ -143,35 +186,8 @@
     <main>
         <div class="main-text">
             <h1>Feedback</h1>
-            <p>We'd love to hear your thoughts about Nigeria! Please fill out the form below to share your feedback.</p>
-            <form id="feedback-form" method="get">
-                <fieldset class="feedback-form">
-                    <legend>Feedback Form</legend>
-                    <!-- Label and input for name -->
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required placeholder="Your name"><br>
-                    <!-- Label and textarea for feedback -->
-                    <label for="feedback">Your Feedback:</label><br>
-                    <textarea id="feedback" name="feedback" placeholder="Share your thoughts..."></textarea><br>
-                    <!-- Label and radio buttons for rating -->
-                    <label for="rating">Rating:</label><br>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1">1</label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2">2</label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3">3</label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4">4</label>
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5">5</label><br>
-                    <!-- Label and color picker for Nigeria's flag color -->
-                    <label for="color">What color is Nigeria's flag:</label><br>
-                    <input type="color" id="color" name="color"><br>
-                    <!-- Submit button -->
-                    <input type="submit" value="Submit">
-                </fieldset>
-            </form>
+            <button id="openFormButton">Open Feedback  Form</button>
+            
 
             <h2>Popular Nigerian Cities</h2>
             <p>Here are some of the most popular cities in Nigeria, along with detailed descriptions of their unique features and cultural significance:</p>
@@ -223,5 +239,81 @@
     <footer>
         <h4>All my references are in this<a href="sources.html" style="color: #FFD700;"> link</a> | Move to the <a href="about.html" style="color: #FFD700;">About Nigeria</a> page to view deeper content.</h4>
     </footer>
+
+    <!--Modal-->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Feedback</h1>
+            <p>We'd love to hear your thoughts about Nigeria! Please fill out the form below to share your feedback.</p>
+            <form id="feedback-form" method="get">
+                <fieldset class="feedback-form">
+                    <legend>Feedback Form</legend>
+                    <!-- Label and input for name -->
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Your name"><br>
+                    <!-- Label and textarea for feedback -->
+                    <label for="feedback">Your Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" placeholder="Share your thoughts..."></textarea><br>
+                    <label for="question">Would you like to visit Nigeria?</label><br>
+                    <input type="checkbox" id="question" name="question" value="yes">
+                    <label for="question">Yes</label>
+                    <input type="checkbox" id="question" name="question" value="no">
+                    <label for="question">No</label><br>
+                    <!-- Label and radio buttons for rating -->
+                    <label for="rating">Rating:</label><br>
+                    <input type="radio" id="star-1" name="rating" value="1">
+                    <label for="star-1">1</label>
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2">2</label>
+                    <input type="radio" id="star-3" name="rating" value="3">
+                    <label for="star-3">3</label>
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4">4</label>
+                    <input type="radio" id="star-5" name="rating" value="5">
+                    <label for="star-5">5</label><br>
+                    <!-- Label and color picker for Nigeria's flag color -->
+                    <label for="color">What color is Nigeria's flag:</label><br>
+                    <input type="color" id="color" name="color"><br>
+                    <!-- Submit button -->
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        // Get the modal element by its ID "feedbackModal"
+        var modal = document.getElementById("feedbackModal");
+
+        // Get the button element by its ID "openFormButton"
+        var btn = document.getElementById("openFormButton");
+
+        // Get the first element with the class name "close"
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal by setting its display style to "block"
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on the <span> element (the "x" button), close the modal by setting its display style to "none"
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it if the clicked target is the modal itself
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // When the user submits the form with ID "feedback-form", prevent the default form submission and close the modal
+        document.getElementById("feedback-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            modal.style.display = "none";
+        });
+</script>
 </body>
 </html>
