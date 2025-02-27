@@ -127,6 +127,7 @@
             display: none; /* Hidden by default */
             position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */
+            overflow: auto; /* Enable scrolling if needed */
             left: 0;
             top: 0;
             width: 100%;
@@ -159,11 +160,21 @@
             padding: 10px 20px;
             background-color: goldenrod;
         }
-        input text{
-            padding: 10px;
-            margin: 5px;
+        input[type="text"],{
             border-radius: 10px;
-            border: 1px solid grey;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        textarea{
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        input[type="submit"]{
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: goldenrod;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -254,7 +265,7 @@
                     <input type="text" id="name" name="name" required placeholder="Your name"><br>
                     <!-- Label and textarea for feedback -->
                     <label for="feedback">Your Feedback:</label><br>
-                    <textarea id="feedback" name="feedback" placeholder="Share your thoughts..."></textarea><br>
+                    <textarea id="feedback" name="feedback" placeholder="Share your thoughts..." required ></textarea><br>
                     <label for="question">Would you like to visit Nigeria?</label><br>
                     <input type="checkbox" id="question" name="question" value="yes">
                     <label for="question">Yes</label>
